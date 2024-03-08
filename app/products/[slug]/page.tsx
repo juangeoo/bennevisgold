@@ -58,7 +58,7 @@ const ProductPage = () => {
   
     return (
       
-      <div style={product ? {backgroundColor: `${product.color}`} : ""}>
+      <div style={product ? {backgroundColor: `${product.color}`} : {backgroundColor: `white`}}>
         <Loading />
         <Nav />
         <div>
