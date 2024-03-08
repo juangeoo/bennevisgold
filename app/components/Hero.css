@@ -1,0 +1,101 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+.hero_hand1 {
+  position: absolute;
+  width: 35vw;
+  left: -3%;
+  top: 50%;
+  transition: all 200ms linear;
+  transform-origin: center left;
+  z-index: 0;
+  opacity: 0.75;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  rotate: z -40deg;
+  filter: sepia(60%) brightness(95%);
+}
+.hero_hand2 {
+  position: absolute;
+  width: 35vw;
+  right: -3%;
+  top: 50%;
+  transition: all 200ms linear;
+  transform-origin: center right;
+  opacity: 0.75;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  filter: sepia(60%) brightness(95%);
+}
+.hero_rock {
+  position: absolute;
+  width: 12vw;
+  top: 45%;
+  left: 25%;
+  transform: rotate(-45deg);
+  transition: all 200ms linear;
+  transform-origin: center center;
+  z-index: 2;
+  opacity: 0.75;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  filter: sepia(60%) brightness(95%);
+}
+.hero_pine {
+  position: absolute;
+  width: 15vw;
+  top: 5%;
+  left: 55%;
+  transform: rotate(45deg);
+  transition: all 200ms linear;
+  transform-origin: center center;
+  z-index: 2;
+  opacity: 0.75;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  filter: sepia(60%) brightness(95%);
+}
+.hero_tag {
+  width: 6em;
+  height: 4em;
+  border-radius: 100%;
+  background-color: #1E1E1E;
+  position: absolute;
+  z-index: 4;
+  box-sizing: border-box;
+  color: white;
+  pointer-events: none;
+  text-align: center;
+  line-height: 4em;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transform-origin: center center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 1.5vw;
+}
+
+.hidden {
+  opacity: 0.25;
+  transition: all 200ms linear;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.canvas {
+  transition: all 200ms linear;
+}
+
+.layer {
+  transform: translateX() translateY();
+}/*# sourceMappingURL=Hero.css.map */

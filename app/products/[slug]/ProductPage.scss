@@ -1,0 +1,221 @@
+@mixin breakpoint($point) {
+    @if $point == small {
+      @media (max-width: 480px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 790px) { @content; }
+    }
+  }
+
+.product {
+    display: flex;
+    flex-direction: column;
+
+    &_image{
+        position: fixed;
+        width:60%;
+        left: 50%;
+
+        @include breakpoint(medium) {
+            top:15%;
+          }
+
+          @include breakpoint(small) {
+            position: relative;
+            left:0;
+            width:100%;
+            top:-10%;
+          }
+    }
+
+    &_hero{
+        display:flex;
+        width:50%;
+        height:100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:100px;
+
+        @include breakpoint(small) {
+            width:100%;
+            
+          }
+
+        &-h1{
+            color:#4A4A3C;
+            font-family:"Big Shoulders Display", sans-serif;
+            font-weight: 800;
+            font-size:5vw;
+            margin:0;
+            text-transform: uppercase;
+            text-align: center;
+
+            @include breakpoint(medium) {
+                font-size:8vw;
+              }
+
+              @include breakpoint(small) {
+                font-size:12vw;
+                width:80%;
+                margin-top:300px;
+              }
+        }
+
+        &-button{
+            border: 1px solid black;
+            border-radius: 50%;
+            padding:2%;
+            transition: all 250ms linear;
+            cursor: pointer;
+
+            @include breakpoint(medium) {
+                padding:5%;
+              }
+
+            &-h2{
+                color:#4A4A3C;
+                font-family:"Big Shoulders Display", sans-serif;
+                font-weight: 800;
+                font-size:1.5vw;
+                margin:0;
+                text-transform: uppercase;
+
+                @include breakpoint(medium) {
+                    font-size:4vw;
+                  }
+
+                  @include breakpoint(small) {
+                    font-size:5vw;
+                  }
+            }
+
+            &:hover{
+                transform:scale(1.3);
+                border: 1px solid white;
+                transition: all 250ms linear;
+            }
+            &:hover h2{
+                color:white;
+                transition: all 250ms linear;
+            }
+        }
+    }
+}
+
+.productInfo{
+    padding:5%;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(small) {
+        width:90%;
+      }
+
+    &_container{
+        border-bottom: 1px dashed black;
+        margin-bottom: 10%;
+
+        &-h3{
+            color:#4A4A3C;
+                font-family:"Big Shoulders Display", sans-serif;
+                font-weight: 800;
+                font-size:1.2vw;
+                margin:0;
+                text-transform: uppercase;
+
+                @include breakpoint(medium) {
+                    font-size:4vw;
+                  }
+
+                  @include breakpoint(small) {
+                    font-size:6vw;
+                  }
+        }
+
+        &-p{
+            color:#3D3D3D;
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size:1vw;
+
+            @include breakpoint(medium) {
+                font-size:3vw;
+              }
+
+              @include breakpoint(small) {
+                font-size:5vw;
+              }
+        }
+    }
+
+    &_end{
+        display: flex;
+        flex-direction: column;
+        padding:5%;
+        width:40%;
+
+        @include breakpoint(small) {
+            width:90%;
+            align-items: center;
+            justify-content: center;
+          }
+
+        &-container{
+            display: flex;
+        }
+
+        &-h1{
+            color:#4A4A3C;
+            font-family:"Big Shoulders Display", sans-serif;
+            font-weight: 800;
+            font-size:5vw;
+            margin:0;
+            text-transform: uppercase;
+
+            @include breakpoint(medium) {
+                font-size:8vw;
+              }
+
+              @include breakpoint(small) {
+                font-size:10vw;
+                
+              }
+        }
+
+        &-h2{
+            color:#4A4A3C;
+            font-family:"Big Shoulders Display", sans-serif;
+            font-weight: 400;
+            font-size:3vw;
+            margin:0;
+            text-transform: uppercase;
+
+            @include breakpoint(medium) {
+                font-size:4vw;
+              }
+
+              @include breakpoint(small) {
+                font-size:6vw;
+                
+              }
+        }
+
+        &-h3{
+            color:#3D3D3D;
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size:1.3vw;
+
+            @include breakpoint(medium) {
+                font-size:3vw;
+              }
+
+              @include breakpoint(small) {
+                font-size:5vw;
+                
+              }
+        }
+    }
+}

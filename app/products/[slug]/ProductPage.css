@@ -1,0 +1,107 @@
+.product {
+  display: flex;
+  flex-direction: column;
+}
+.product_image {
+  position: fixed;
+  width: 50%;
+  left: 50%;
+}
+.product_hero {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.product_hero-h1 {
+  color: #4A4A3C;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.product_hero-button {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 2%;
+  transition: all 250ms linear;
+  cursor: pointer;
+}
+.product_hero-button-h2 {
+  color: #4A4A3C;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 1.5vw;
+  margin: 0;
+  text-transform: uppercase;
+}
+.product_hero-button:hover {
+  transform: scale(1.3);
+  border: 1px solid white;
+  transition: all 250ms linear;
+}
+.product_hero-button:hover h2 {
+  color: white;
+  transition: all 250ms linear;
+}
+
+.productInfo {
+  padding: 5%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.productInfo_container {
+  border-bottom: 1px dashed black;
+  margin-bottom: 10%;
+}
+.productInfo_container-h3 {
+  color: #4A4A3C;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 1.2vw;
+  margin: 0;
+  text-transform: uppercase;
+}
+.productInfo_container-p {
+  color: #3D3D3D;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1vw;
+}
+.productInfo_end {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  width: 40%;
+}
+.productInfo_end-container {
+  display: flex;
+}
+.productInfo_end-h1 {
+  color: #4A4A3C;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  margin: 0;
+  text-transform: uppercase;
+}
+.productInfo_end-h2 {
+  color: #4A4A3C;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  margin: 0;
+  text-transform: uppercase;
+}
+.productInfo_end-h3 {
+  color: #3D3D3D;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.3vw;
+}/*# sourceMappingURL=ProductPage.css.map */

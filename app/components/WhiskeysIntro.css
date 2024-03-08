@@ -1,0 +1,88 @@
+.introw-whiskeys {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  padding-top: 15vh;
+  box-sizing: border-box;
+  gap: 5%;
+  position: relative;
+  height: auto;
+}
+.introw-whiskeys-left {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+}
+.introw-whiskeys-left-h1 {
+  color: #4A4A3C;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  margin: 0;
+}
+.introw-whiskeys-left-backcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+.introw-whiskeys-left-backcontainer:hover {
+  font-size: 1.4em;
+  letter-spacing: 5px;
+}
+.introw-whiskeys-left-backcontainer-h3 {
+  font-size: 1.3em;
+  font-family: "Big Shoulders Display", sans-serif;
+  margin: 0;
+  padding: 2%;
+  border-bottom: 1px solid black;
+}
+.introw-whiskeys-right {
+  display: flex;
+  flex-direction: column;
+}
+.introw-whiskeys-right-h1 {
+  color: #4A4A3C;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 3.5vw;
+  margin: 0;
+  text-transform: uppercase;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+.introw-whiskeys-right-h1:hover {
+  color: #9B9D6F;
+  letter-spacing: 5px;
+}
+.introw-whiskeys-modalContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 55vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  left: 63%;
+}
+.introw-whiskeys-modalSlider {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: all 0.2s ease-in-out;
+}
+.introw-whiskeys-modalSlider-imgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.introw-whiskeys-modalSlider-imgContainer-img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=WhiskeysIntro.css.map */

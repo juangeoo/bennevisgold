@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Nevis Mist Gold",
+        "src": "w1.png",
+        "price": 29.99,
+        "slug": "nevis-mist-gold",
+        "png": "png1.png",
+        "variety": "Married to the purest mountain spring waters with the finest hand-selected grains, aged to perfection in charred oak barrels.",
+        "taste": "Robust oak meets delicate hints of vanilla and caramel, culminating in a smooth, lingering finish that whispers of tradition and refinement.",
+        "combination": "Savor the perfect marriage of smoky peat and velvety caramel in our signature whiskey blend",
+        "measure": "0.75l",
+        "color": "#E2D994"
+    },
+    {
+        "title": "Nevis Royal Reserve",
+        "src": "w2.png",
+        "price": 24.99,
+        "slug": "nevis-royal-reserve",
+        "png": "png2.png",
+        "variety": "It's an invitation to journey through the storied landscapes of Scotland, where time-honored tradition meets modern craftsmanship.",
+        "taste": "Delight in the interplay of smoky notes and subtle hints of honeyed sweetness, culminating in a finish that lingers like a Highland mist.",
+        "combination": "Experience the intriguing fusion of warm spices and rich, honeyed undertones in our unique whiskey blend",
+        "measure": "0.75l",
+        "color": "#FF949E"
+    },
+    {
+        "title": "Gaelic Summit Select",
+        "src": "introimage.png",
+        "price": 34.99,
+        "slug": "gaelic-summit-select",
+        "png": "png3.png",
+        "variety": "A harmonious fusion of smoky peat and delicate heather, this whiskey captures the essence of the Highlands in every sip",
+        "taste": "A smooth and nuanced flavor profile that lingers like a Highland breeze.",
+        "combination": "Where zesty citrus notes are complemented by a tantalizing blend of exotic spices.",
+        "measure": "0.75l",
+        "color": "#E3A97D"
+    },
+    {
+        "title": "Glenfinnan Golden Spirit",
+       "src": "w3.png",
+       "price": 19.99,
+       "slug": "glenfinnan-golden-spirit",
+       "png": "png4.png",
+       "variety": "Crafted from the purest mountain waters and aged in oak barrels, this distinguished blend boasts layers of rich caramel and hints of toasted oak",
+       "taste": "Where zesty citrus notes are complemented by a tantalizing blend of exotic spices.",
+       "combination": "Let the sweet embrace of honey and malted barley transport you to the rolling hills of the Scottish Highlands. ",
+       "measure": "0.75l",
+       "color": "#8FBD88"
+    },
+    {
+        "title": "Highland Mist Elixir",
+        "src": "w4.png",
+        "price": 27.99,
+        "slug": "highland-mist-elixir",
+        "png": "png5.png",
+        "variety": "With its robust flavor and subtle notes of vanilla and spice, this timeless blend embodies the rugged beauty and timeless allure of the Scottish Highlands.",
+        "taste": "From its golden hue to its complex aroma, this exceptional whiskey offers a symphony of flavors, including hints of honey, dried fruit, and a whisper of smoky peat.",
+        "combination": "Where the smoothness of oak meets the depth of dark chocolate and toasted nuts.",
+        "measure": "0.75l",
+        "color": "#93E6E9"
+    },
+    {
+        "title": "Loch Lomond Gold Fusion",
+        "src": "w6.png",
+        "price": 35.99,
+        "slug": "loch-lomond-gold-fusion",
+        "png": "png6.png",
+        "variety": "This distinguished whiskey combines the purity of mountain spring water with the depth of flavor imparted by years of careful aging, resulting in a whiskey of unparalleled complexity and character.",
+        "taste": " From its golden hue to its complex aroma, this exceptional whiskey offers a symphony of flavors, including hints of honey, dried fruit, and a whisper of smoky peat.",
+        "combination": "Experience the perfect balance of Highland heather and warm spices in this exquisite whiskey combination.",
+        "measure": "0.75l",
+        "color": "#B9A9A9"
+    },
+    {
+        "title": "Cairngorm Summit Heritage",
+        "src": "w7.png",
+        "price": 19.99,
+        "slug": "cairngorm-summit-heritage",
+        "png": "png7.png",
+        "variety": "This distinguished whiskey combines the purity of mountain spring water with the depth of flavor imparted by years of careful aging, resulting in a whiskey of unparalleled complexity and character.",
+        "taste": " From its golden hue to its complex aroma, this exceptional whiskey offers a symphony of flavors, including hints of honey, dried fruit, and a whisper of smoky peat.",
+        "combination": "Experience the perfect balance of Highland heather and warm spices in this exquisite whiskey combination.",
+        "measure": "0.75l",
+        "color": "#95B48C"
+    }
+]

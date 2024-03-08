@@ -1,0 +1,149 @@
+@mixin breakpoint($point) {
+    @if $point == small {
+      @media (max-width: 480px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 790px) { @content; }
+    }
+  }
+
+.territory_hero{
+    display: flex;
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-h1{
+        color:#4A4A3C;
+        font-family:"Big Shoulders Display", sans-serif;
+        font-weight: 800;
+        font-size:10vw;
+        margin:0;
+        text-transform: uppercase;
+
+        @include breakpoint(medium) {
+            font-size:12vw;
+          }
+
+          @include breakpoint(small) {
+            font-size:16vw;
+          }
+    }
+
+    &-h3{
+        position: absolute;
+        bottom:3vh;
+        font-family:"Big Shoulders Display", sans-serif;
+        font-weight: 800;
+        font-size:1.2vw;
+
+        @include breakpoint(medium) {
+            font-size:5vw;
+          }
+    }
+
+    &-rock{
+        position: absolute;
+        width:15vw;
+        top:20%;
+        left:10%;
+        transform: rotate(-45deg);
+        z-index:2;
+        opacity:1;
+        user-select: none;
+        filter: sepia(60%) brightness(95%);
+
+        @include breakpoint(medium) {
+            width:25vw;
+            left:5%;
+            top:30%;
+          }
+    }
+
+    &-pine{
+        position: absolute;
+        width:17vw;
+        top:60%;
+        left:70%;
+        transform: rotate(45deg);
+        z-index:2;
+        opacity:1;
+        user-select: none;
+        filter: sepia(60%) brightness(95%);
+
+        @include breakpoint(medium) {
+            width:35vw;
+            top:55%;
+            left:65%;
+          }
+
+          @include breakpoint(small) {
+            top:60%;
+            left:55%;
+          }
+    }
+
+    &-pineleave{
+        position: absolute;
+        width:20vw;
+        top:10%;
+        left:70%;
+        transform: rotate(150deg);
+        z-index:2;
+        opacity:1;
+        user-select: none;
+        filter: sepia(60%) brightness(95%);
+
+        @include breakpoint(medium) {
+            width:35vw;
+            left:60%;
+          }
+
+          @include breakpoint(small) {
+            top:25%;
+          }
+
+    }
+
+    &-leave{
+        position: absolute;
+        width:20vw;
+        top:10%;
+        left:45%;
+        transform: rotate(45deg);
+        z-index:2;
+        opacity:1;
+        user-select: none;
+        filter: sepia(60%) brightness(95%);
+
+        @include breakpoint(medium) {
+            width:35vw;
+            left:25%;
+          }
+    }
+
+    &-wood{
+        position: absolute;
+        width:35vw;
+        top:55%;
+        left:15%;
+        z-index:2;
+        opacity:.75;
+        user-select: none;
+        filter: sepia(60%) brightness(95%);
+
+        @include breakpoint(medium) {
+            width:50vw;
+            top:55%;
+            left:10%;
+          }
+
+          @include breakpoint(small) {
+            top:70%;
+            left:5%;
+          }
+    }
+
+}

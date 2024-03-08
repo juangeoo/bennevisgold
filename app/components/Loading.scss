@@ -1,0 +1,33 @@
+@mixin breakpoint($point) {
+    @if $point == small {
+      @media (max-width: 480px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 790px) { @content; }
+    }
+  }
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    position: fixed;
+    background-color:#4A4A3C;
+    color:white;
+    z-index: 101;
+
+    &-h1{
+        font-family: "Gloock", serif;
+        font-weight: 400;
+        font-style: normal;
+        user-select: none;
+        color:#EEEFD8;
+        font-size:5vw;
+
+        @include breakpoint(medium) {
+            font-size:8vw;
+          }
+    }
+}

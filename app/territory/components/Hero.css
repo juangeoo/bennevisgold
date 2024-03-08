@@ -1,0 +1,87 @@
+.territory_hero {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.territory_hero-h1 {
+  color: #4A4A3C;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 10vw;
+  margin: 0;
+  text-transform: uppercase;
+}
+.territory_hero-h3 {
+  position: absolute;
+  bottom: 3vh;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 1.2vw;
+}
+.territory_hero-rock {
+  position: absolute;
+  width: 15vw;
+  top: 20%;
+  left: 10%;
+  transform: rotate(-45deg);
+  z-index: 2;
+  opacity: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  filter: sepia(60%) brightness(95%);
+}
+.territory_hero-pine {
+  position: absolute;
+  width: 17vw;
+  top: 60%;
+  left: 70%;
+  transform: rotate(45deg);
+  z-index: 2;
+  opacity: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  filter: sepia(60%) brightness(95%);
+}
+.territory_hero-pineleave {
+  position: absolute;
+  width: 20vw;
+  top: 10%;
+  left: 70%;
+  transform: rotate(150deg);
+  z-index: 2;
+  opacity: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  filter: sepia(60%) brightness(95%);
+}
+.territory_hero-leave {
+  position: absolute;
+  width: 20vw;
+  top: 10%;
+  left: 45%;
+  transform: rotate(45deg);
+  z-index: 2;
+  opacity: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  filter: sepia(60%) brightness(95%);
+}
+.territory_hero-wood {
+  position: absolute;
+  width: 35vw;
+  top: 55%;
+  left: 15%;
+  z-index: 2;
+  opacity: 0.75;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  filter: sepia(60%) brightness(95%);
+}/*# sourceMappingURL=Hero.css.map */

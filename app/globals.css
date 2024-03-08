@@ -1,33 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+ background-color:#EEEFD8;
+ overflow-x: hidden;
+ width:100vw !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.lenis {
+  width:100vw !important;
+}
+
+.main {
+  display:flex;
+  flex-direction: column;
+  gap:20px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin:0;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.mainTitle{
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+  position:fixed;
+  color:#4A4A3C;
+  font-size:11vw;
+  width:100vw;
+  bottom:10px;
+  padding:0;
+  margin:0;
+  text-align:center;
+  z-index:1;
+}
+
+#leva__root{
+  visibility: hidden;
 }

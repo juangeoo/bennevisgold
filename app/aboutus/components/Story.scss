@@ -1,0 +1,193 @@
+@mixin breakpoint($point) {
+    @if $point == small {
+      @media (max-width: 480px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 790px) { @content; }
+    }
+  }
+
+.story{
+    width:96vw;
+    padding:2%;
+    margin-top:10%;
+
+    &_part1{
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint(medium) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+        &-h1{
+            color:#4A4A3C;
+            font-family:"Big Shoulders Display", sans-serif;
+            font-weight: 800;
+            font-size:4.5vw;
+            margin:0;
+            text-transform: uppercase;
+            width:50%;
+            position: relative;
+
+            @include breakpoint(medium) {
+                text-align: center;
+                font-size:10vw;
+                width:100%;
+              }
+        }
+
+        &-p{
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size:1.4vw;
+            position: relative;
+            width:45%;
+            justify-self: start;
+            margin:0;
+
+            @include breakpoint(medium) {
+                text-align: center;
+                font-size:5vw;
+                width:100%;
+                margin:10% 0;
+              }
+
+              @include breakpoint(small) {
+                font-size:6vw;
+              }
+        }
+
+        &-imgcontainer{
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            padding-top:5%;
+
+            @include breakpoint(medium) {
+                align-items: center;
+                justify-content: center;
+              }
+
+            &-img{
+                width: 50%;
+
+                @include breakpoint(medium) {
+                    width: 100%;
+                  }
+            }
+        }
+    }
+
+    &_part2{
+        display: flex;
+        justify-content: space-between;
+        margin-top:10%;
+
+        @include breakpoint(medium) {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+          }
+
+        &-img{
+            width: 50%;
+
+            @include breakpoint(medium) {
+                width: 100%;
+              }
+        }
+
+        &-p{
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size:1.4vw;
+            position: relative;
+            width:45%;
+            justify-self: start;
+            margin:0;
+
+            @include breakpoint(medium) {
+                text-align: center;
+                font-size:5vw;
+                width:100%;
+                margin:10% 0;
+              }
+
+              @include breakpoint(small) {
+                font-size:6vw;
+              }
+        }
+    }
+
+    &_part3{
+        display: flex;
+        justify-content: space-between;
+        margin-top:10%;
+
+        @include breakpoint(medium) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+        &-h1{
+            color:#4A4A3C;
+            font-family:"Big Shoulders Display", sans-serif;
+            font-weight: 800;
+            font-size:4.5vw;
+            margin:0;
+            text-transform: uppercase;
+            width:50%;
+
+            @include breakpoint(medium) {
+                text-align: center;
+                font-size:10vw;
+                width:100%;
+              }
+        }
+
+        &-p{
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size:1.4vw;
+            position: relative;
+            width:45%;
+            justify-self: start;
+            margin:0;
+
+            @include breakpoint(medium) {
+                text-align: center;
+                font-size:5vw;
+                width:100%;
+                margin:10% 0;
+              }
+
+              @include breakpoint(small) {
+                font-size:6vw;
+              }
+        }
+
+        &-imgcontainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top:5%;
+
+            @include breakpoint(medium) {
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+              }
+
+            &-img{
+                width: 50%;
+                @include breakpoint(medium) {
+                    width: 100%;
+                  }
+            }
+        }
+    }
+}

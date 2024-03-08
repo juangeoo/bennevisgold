@@ -1,0 +1,21 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #4A4A3C;
+  color: white;
+  z-index: 101;
+}
+.loading-h1 {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #EEEFD8;
+  font-size: 5vw;
+}/*# sourceMappingURL=Loading.css.map */

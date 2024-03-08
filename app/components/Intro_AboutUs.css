@@ -1,0 +1,47 @@
+.intro_aboutusContainer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3D3D3D;
+}
+
+.intro_aboutus {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+}
+.intro_aboutus-h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  margin: 0;
+  position: relative;
+}
+.intro_aboutus-p {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.2vw;
+  position: relative;
+}
+.intro_aboutus-button {
+  display: flex;
+  position: relative;
+  height: auto;
+}
+.intro_aboutus-button-p {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+.intro_aboutus-button-p2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 1.2vw;
+}/*# sourceMappingURL=Intro_AboutUs.css.map */
