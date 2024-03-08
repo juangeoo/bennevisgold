@@ -2,6 +2,7 @@ import React from 'react'
 import "./Intro_AboutUs.scss"
 import gsap from "gsap"
 import { useEffect, useLayoutEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 const Intro_AboutUs = () => {
 
