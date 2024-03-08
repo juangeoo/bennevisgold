@@ -3,6 +3,8 @@ import Whiskeys from "./Whiskeys.json"
 import { useLayoutEffect, useRef, useState } from 'react';
 import gsap from "gsap"
 import "./WhiskeysIntro.scss"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
 
 const WhiskeysIntro = () => {
 
@@ -10,6 +12,12 @@ const WhiskeysIntro = () => {
     
     const container = useRef(null);
 
+     useLayoutEffect ( () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+  }, [])
+
+    
     useLayoutEffect( () => {
 
             // h1
