@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef, useState, useLayoutEffect } from 'react';
 import "./Hero.scss"
 import { Canvas, useThree, useFrame } from '@react-three/fiber'
