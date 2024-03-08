@@ -25,9 +25,7 @@ const Hero = () => {
   const [selected, setSelected] = useState(0);
   
   // Objects hover
-  function Hover() {
-    return useLayoutEffect(() => {
-     
+  useLayoutEffect(() => {
       
       const hand1 = document.querySelector('.hero_hand1')
       const hand2 = document.querySelector('.hero_hand2')
@@ -35,11 +33,9 @@ const Hero = () => {
       const pine = document.querySelector('.hero_pine')
       const canvas = document.querySelector('.canvas')
     
-    
-      return () => {
-      
+  
 
-          // HAND 1
+            // HAND 1
         hand1.addEventListener("mouseenter", function(){
           setSelected(1);
           
@@ -109,11 +105,9 @@ const Hero = () => {
       
       canvas.classList.remove("hidden");
     });
-        
+           
 
-      };
     }, [selected]);
-  }
 
   // Objects move
     useEffect(() => {
@@ -227,7 +221,7 @@ useLayoutEffect( () => {
       <a href="/aboutus"><img className="hero_hand1 layer" src="./hand1b.png" alt="" draggable="false" /></a>
       <a href="/aboutus"><img className="hero_hand2 layer" src="./hand2b.png" alt="" draggable="false" /></a>
 
-      <Hover />
+     
        </div>
 
 
