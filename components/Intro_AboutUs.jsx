@@ -9,6 +9,11 @@ const Intro_AboutUs = () => {
     const p = useRef(null);
     const p2 = useRef(null);
 
+     useLayoutEffect ( () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+  }, [])
+
     useLayoutEffect( () => {
 
             // h1
