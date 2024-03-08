@@ -2,12 +2,19 @@ import React from 'react'
 import "./Intro_Location.scss"
 import gsap from "gsap"
 import { useEffect, useLayoutEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
 
 const Intro_Location = () => {
 
     const h1 = useRef(null);
     const p = useRef(null);
     const p2 = useRef(null);
+
+     useLayoutEffect ( () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+  }, [])
 
     useLayoutEffect( () => {
 
