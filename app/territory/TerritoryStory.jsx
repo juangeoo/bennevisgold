@@ -2,6 +2,8 @@ import React from 'react'
 import "./TerritoryStory.scss"
 import gsap from "gsap"
 import { useEffect, useLayoutEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
 
 const TerritoryStory = () => {
 
@@ -13,6 +15,11 @@ const TerritoryStory = () => {
   const img3 = useRef(null);
   const h1b = useRef(null);
   const p3 = useRef(null);
+
+  useLayoutEffect ( () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+  }, [])
 
   useLayoutEffect( () => {
 
