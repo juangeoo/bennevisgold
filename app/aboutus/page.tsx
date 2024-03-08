@@ -10,6 +10,7 @@ import "../../components/Footer.scss"
 import "../../components/WhiskeysIntro.scss"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import gsap from "gsap"
+import {IsClientCtxProvider} from "../is-client-ctx"
 
 import { useEffect, useRef, useState, useLayoutEffect } from 'react';
 
@@ -30,13 +31,16 @@ export default function AboutUs() {
   }, [])
 
   return (
-    <main>
+    <IsClientCtxProvider>
+      <main>
         <Loading />
         <Nav />
         <Hero />
         <Story />
         <WhiskeysIntro />
         <Footer />
-    </main>
+      </main>
+    </IsClientCtxProvider>
+    
   )
 }

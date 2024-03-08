@@ -9,6 +9,7 @@ import Footer from "../../../components/Footer"
 import Whiskeys from "../../../components/Whiskeys.json"
 import { useParams } from "next/navigation";
 import "./ProductPage.scss"
+import {IsClientCtxProvider} from "../../is-client-ctx"
 
 const ProductPage = () => {
     const params = useParams();
@@ -56,6 +57,8 @@ const ProductPage = () => {
     }, [])
   
     return (
+      <IsClientCtxProvider>
+
       
       <div style={product ? {backgroundColor: `${product.color}`} : {backgroundColor: `white`}}>
         <Loading />
@@ -108,6 +111,7 @@ const ProductPage = () => {
         <WhiskeysIntro />
         <Footer />
       </div>
+      </IsClientCtxProvider>
     );
   };
   

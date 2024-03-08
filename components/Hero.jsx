@@ -121,7 +121,7 @@ const Hero = () => {
       const tag = document.getElementById("tag");
       const tag2 = document.getElementById("tag2");
 
-      window.scrollTo(0, Element.scrollTop)
+     window.scrollTo(0, Element.scrollTop);
       
 
       container.onmousemove = function(e){

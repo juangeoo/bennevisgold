@@ -8,6 +8,7 @@ import Nav from "../../components/Nav"
 import ProductList from "./ProductList"
 import Hero from "./Hero"
 import Footer from "../../components/Footer"
+import {IsClientCtxProvider} from "../is-client-ctx"
 
 export default function Products() {
 
@@ -26,12 +27,15 @@ export default function Products() {
   
 
     return (
-    <div style={{backgroundColor: "white"}}>
+      <IsClientCtxProvider>
+        <div style={{backgroundColor: "white"}}>
         <Loading />
         <Nav />
         <Hero />
         <ProductList />
         <Footer />
-    </div>
+      </div>
+      </IsClientCtxProvider>
+    
   )
 }

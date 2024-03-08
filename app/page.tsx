@@ -13,6 +13,7 @@ import Intro_Location from "../components/Intro_Location"
 import WhiskeysIntro from "../components/WhiskeysIntro"
 import Footer from "../components/Footer"
 import Loading from "../components/Loading"
+import {IsClientCtxProvider} from "./is-client-ctx"
 
 
 export default function Home() {
@@ -67,7 +68,8 @@ export default function Home() {
 
   
   return (
-    <main>
+    <IsClientCtxProvider>
+      <main>
       <h1 ref={title} className="mainTitle">BEN NEVIS GOLD</h1>
 
         <Loading/>
@@ -81,5 +83,7 @@ export default function Home() {
         <Footer />
 
     </main>
+    </IsClientCtxProvider>
+    
   );
 }

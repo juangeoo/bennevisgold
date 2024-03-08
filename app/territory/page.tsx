@@ -9,6 +9,7 @@ import Footer from "../../components/Footer"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import gsap from "gsap"
 import { useEffect, useRef, useState, useLayoutEffect } from 'react';
+import {IsClientCtxProvider} from "../is-client-ctx"
 
 
 export default function Territory() {
@@ -28,13 +29,16 @@ export default function Territory() {
   }, [])
 
   return (
-    <main>
+    <IsClientCtxProvider>
+      <main>
         <Loading />
         <Nav />
         <Hero />
         <TerritoryStory />
         <WhiskeysIntro />
         <Footer />
-    </main>
+      </main>
+    </IsClientCtxProvider>
+    
   )
 }

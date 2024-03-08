@@ -157,7 +157,7 @@ const [modal, setModal] = useState({active: false, index: 0})
 
         <div className="nav">
             <div className="nav_header">
-                <h2 className="nav_header-h2" onClick={() => {window.location.href='/'}}>A tribute to nature's majesty</h2>
+                <h2 className="nav_header-h2" onClick={() => { window.location.href='/'}}>A tribute to nature's majesty</h2>
             </div>
             <div className="nav_menu">
                 <img src="/user.svg" alt="" />
