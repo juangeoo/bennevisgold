@@ -2,14 +2,13 @@
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import gsap from "gsap"
 import { useEffect, useRef, useState, useLayoutEffect } from 'react';
-import Loading from "../../components/Loading"
-import Nav from "../../components/Nav"
-import WhiskeysIntro from "../../components/WhiskeysIntro"
-import Footer from "../../components/Footer"
-import Whiskeys from "../../components/Whiskeys.json"
+import Loading from "../../../components/Loading"
+import Nav from "../../../components/Nav"
+import WhiskeysIntro from "../../../components/WhiskeysIntro"
+import Footer from "../../../components/Footer"
+import Whiskeys from "../../../components/Whiskeys.json"
 import { useParams } from "next/navigation";
 import "./ProductPage.scss"
-
 
 const ProductPage = () => {
     const params = useParams();

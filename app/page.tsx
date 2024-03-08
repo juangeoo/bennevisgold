@@ -4,15 +4,15 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import './globals.css';
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import Nav from "./components/Nav"
-import Hero from "./components/Hero"
-import Intro from "./components/Intro"
-import Intro_AboutUs from "./components/Intro_AboutUs"
-import LocationSection from "./components/LocationSection"
-import Intro_Location from "./components/Intro_Location"
-import WhiskeysIntro from "./components/WhiskeysIntro"
-import Footer from "./components/Footer"
-import Loading from "./components/Loading"
+import Nav from "../components/Nav"
+import Hero from "../components/Hero"
+import Intro from "../components/Intro"
+import Intro_AboutUs from "../components/Intro_AboutUs"
+import LocationSection from "../components/LocationSection"
+import Intro_Location from "../components/Intro_Location"
+import WhiskeysIntro from "../components/WhiskeysIntro"
+import Footer from "../components/Footer"
+import Loading from "../components/Loading"
 
 
 export default function Home() {
