@@ -28,85 +28,85 @@ const Hero = () => {
     return useEffect(() => {
      
       
-      const hand1 = document.getElementsByClassName('hero_hand1')
-      const hand2 = document.getElementsByClassName('hero_hand2')
-      const rock = document.getElementsByClassName('hero_rock')
-      const pine = document.getElementsByClassName('hero_pine')
-      const canvas = document.getElementsByClassName('canvas')
+      const hand1 = document.querySelector('.hero_hand1')
+      const hand2 = document.querySelector('.hero_hand2')
+      const rock = document.querySelector('.hero_rock')
+      const pine = document.querySelector('.hero_pine')
+      const canvas = document.querySelector('.canvas')
     
     
       return () => {
       
 
           // HAND 1
-        hand1[0].addEventListener("mouseenter", function(){
-          setSelected(1)
+        hand1.addEventListener("mouseenter", function(){
+          setSelected(1);
           
-          rock[0].classList.add("hidden");
-          pine[0].classList.add("hidden");
-          canvas[0].classList.add("hidden");
+          rock.classList.add("hidden");
+          pine.classList.add("hidden");
+          canvas.classList.add("hidden");
           
       });
     
-      hand1[0].addEventListener("mouseleave", function(){
+      hand1.addEventListener("mouseleave", function(){
         setSelected(0)
        
-        rock[0].classList.remove("hidden");
-        pine[0].classList.remove("hidden");
-        canvas[0].classList.remove("hidden");
+        rock.classList.remove("hidden");
+        pine.classList.remove("hidden");
+        canvas.classList.remove("hidden");
         
     });
     
     // HAND 2
-    hand2[0].addEventListener("mouseenter", function(){
+    hand2.addEventListener("mouseenter", function(){
       setSelected(1)
-      rock[0].classList.add("hidden");
-      pine[0].classList.add("hidden");
-      canvas[0].classList.add("hidden");
+      rock.classList.add("hidden");
+      pine.classList.add("hidden");
+      canvas.classList.add("hidden");
     });
     
-    hand2[0].addEventListener("mouseleave", function(){
+    hand2.addEventListener("mouseleave", function(){
     setSelected(0)
-    rock[0].classList.remove("hidden");
-    pine[0].classList.remove("hidden");
-    canvas[0].classList.remove("hidden");
+    rock.classList.remove("hidden");
+    pine.classList.remove("hidden");
+    canvas.classList.remove("hidden");
     });
     
     // ROCK
     
-    rock[0].addEventListener("mouseenter", function(){
+    rock.addEventListener("mouseenter", function(){
       setSelected(2)
-      hand1[0].classList.add("hidden");
-      hand2[0].classList.add("hidden");
+      hand1.classList.add("hidden");
+      hand2.classList.add("hidden");
       
-      canvas[0].classList.add("hidden");
+      canvas.classList.add("hidden");
     });
     
-    rock[0].addEventListener("mouseleave", function(){
+    rock.addEventListener("mouseleave", function(){
     setSelected(0)
-    hand1[0].classList.remove("hidden");
-      hand2[0].classList.remove("hidden");
+    hand1.classList.remove("hidden");
+      hand2.classList.remove("hidden");
       
-      canvas[0].classList.remove("hidden");
+      canvas.classList.remove("hidden");
     });
     
     
     // PINE
     
-    pine[0].addEventListener("mouseenter", function(){
+    pine.addEventListener("mouseenter", function(){
       setSelected(2)
-      hand1[0].classList.add("hidden");
-      hand2[0].classList.add("hidden");
+      hand1.classList.add("hidden");
+      hand2.classList.add("hidden");
      
-      canvas[0].classList.add("hidden");
+      canvas.classList.add("hidden");
     });
     
-    pine[0].addEventListener("mouseleave", function(){
+    pine.addEventListener("mouseleave", function(){
     setSelected(0)
-    hand1[0].classList.remove("hidden");
-      hand2[0].classList.remove("hidden");
+    hand1.classList.remove("hidden");
+      hand2.classList.remove("hidden");
       
-      canvas[0].classList.remove("hidden");
+      canvas.classList.remove("hidden");
     });
         
 
