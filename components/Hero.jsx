@@ -26,7 +26,7 @@ const Hero = () => {
   
   // Objects hover
   function Hover() {
-    return useEffect(() => {
+    return useLayoutEffect(() => {
      
       
       const hand1 = document.querySelector('.hero_hand1')
